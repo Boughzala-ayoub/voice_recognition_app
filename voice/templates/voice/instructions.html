@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'voice/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Instructions</h1>
+        <span>Here is the list of the things that u can do with this app. The instructions that u can say after 1s of pressing the hit me button located in home page are in parenthesis.<br>
+            Prononciation is  an import factor to the app to understand you.</span>
+        <br><a  class="button" href="{% url 'voice:index' %}"><button>back to home page</button> </a>
+        <ul>
+            <li>to greet her say (hello)</li>
+            <li>to ask her about her name say (what is your name) </li>
+            <li>to ask about her say (who are you)</li>
+            <li>to ask her how she is doing say (how are you)</li>
+            <li>to ask her about the name of her creator say (who created you)</li>
+            <li>to ask for more informations about her creator say (tell me more about your creator)</li>
+            <li>to say goodbye to her say (bye) or (goodbye) (bye bye)</li>
+            <li>to thank her say (thank you)</li>
+            <li>to ask her to give the time say (what is the time)</li>
+            <li>to ask her to give the date say (what is the date)</li>
+            <li>to ask her to search for the weather in a place say (weather in)+ the name of the place
+                for example "weather in paris" to get the weather in paris
+            </li>
+            <li>to ask her to take you to another site in this list [facebook, google, youtube, linkedin, twitter] say (take me to) + one of the words in the list</li>
+            <li>to search in google for something say (search in google for)+ what u wanna search for , for example "search in google for smartphones" to do a google search on smartphone</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

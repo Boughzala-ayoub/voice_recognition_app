@@ -1,0 +1,22 @@
+body {
+  background: linear-gradient(90deg, #ccffff, #ffcccc);
+  background-size: cover;
+  text-align: center;
+  border-radius: 25px;
+}
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.button {
+  display: inline;
+}
+p,
+ul,
+li {
+  text-align: left;
+}
+
+.navigation {
+  appearance: button;
+}

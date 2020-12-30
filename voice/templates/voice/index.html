@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'voice/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voice recognition</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Voice Recognition App</h1>
+        <span class="ppr">If you are visting this app for the first time, either press hit me and say after 1s instructions or press instructions to understand what the app do.</span>
+        <br><button class="icon button">hit me</button> <a class="button" href="{% url 'voice:instructions' %}"><button>Instructions</button></a>
+        <script src="{% static 'voice/main.js' %}">
+
+        </script>
+    </div>
+    
+</body>
+</html>
